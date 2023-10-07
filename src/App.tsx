@@ -1,12 +1,13 @@
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
-import CSSChildPseudoclass from "./Components/CSSChildPseudoclass/CSSChildPseudoclass";
+// import CSSChildPseudoclass from "./Components/CSSChildPseudoclass/CSSChildPseudoclass";
 // import './App.css'
+
+import GridTemplate from "./Components/GridTemplate/GridTemplate";
 
 function App() {
   return (
     <>
-      <CSSChildPseudoclass />
+      {/* <CSSChildPseudoclass /> */}
+      <GridTemplate />
     </>
   );
 }
