@@ -1,0 +1,85 @@
+ul {
+  list-style: none;
+}
+.list-item {
+  margin-bottom: 12px;
+  background-color: bisque;
+  font-size: 28px;
+
+  &:first-child {
+    background-color: tomato;
+  }
+
+  &:last-child {
+    background-color: aqua;
+  }
+  /*
+ * Читається як: застосувати стилі до всіх елементів з класом list-item,
+ * які не є останнім елементом в колекції сусідів.
+ */
+  &:not(:last-child) {
+    color: purple;
+  }
+}
+
+// Псевдоклас :nth-child(an+b)
+// Вибирає елементи в колекції сусідів за номером, зазначеним в дужках,
+// за допомогою циклу an+b, який дозволяє задати правило для послідовності елементів.
+
+// a - період циклу. Довільне число.
+// n - лічильник циклу. Починається з нуля і збільшується на одиницю на кожній ітерації.
+// b - зміщення. Довільне число.
+
+.nth-child-list {
+  display: flex;
+  justify-content: center;
+
+  .nth-child-list-item {
+    margin-right: 16px;
+    padding: 16px;
+    border: 2px solid black;
+    border-radius: 50%;
+
+    // N-й елемент
+    // &:nth-child(5) {
+    //   background-color: orange;
+    // }
+
+    // Парні елементи
+    // &:nth-child(2n) {
+    //   background-color: orange;
+    // }
+    /* Аналогічно, використовуючи псевдонім */
+    // &:nth-child(even) {
+    //   background-color: orange;
+    // }
+
+    // Непарні елементи
+    // &:nth-child(2n + 1) {
+    //   background-color: orange;
+    // }
+    /* Аналогічно, використовуючи псевдонім */
+    // &:nth-child(odd) {
+    //   background-color: orange;
+    // }
+
+    // Від N-го елемента
+    // &:nth-child(n + 6) {
+    //   background-color: orange;
+    // }
+
+    // До N-го елемента
+    // &:nth-child(-n + 5) {
+    //   background-color: orange;
+    // }
+
+    // Кожен N-й елемент
+    &:nth-child(3n + 1) {
+      background-color: orange;
+    }
+
+    // Псевдоклас :nth-last-child(an+b)
+    // Аналог :nth-child() з відмінністю у тому,
+    // що відлік ведеться з кінця колекції (Останнього елемента).
+  }
+}
