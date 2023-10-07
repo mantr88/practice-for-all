@@ -14,6 +14,10 @@ function GridTemplate() {
       <div className="grid-item grid-item9">9</div>
       <div className="grid-item grid-item10">10</div>
       <div className="grid-item grid-item11">11</div>
+      <div className="grid-item grid-item12">12</div>
+      <div className="grid-item grid-item13">13</div>
+      <div className="grid-item grid-item14">14</div>
+      <div className="grid-item grid-item15">15</div>
     </div>
   );
 }

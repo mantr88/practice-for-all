@@ -3,6 +3,7 @@
   grid-template-columns: repeat(6, [col] 1fr);
   grid-template-rows: repeat(3, [row] 1fr);
   gap: 10px;
+  grid-auto-flow: row dense;
   border: 1px dashed #000;
 
   .grid-item {
@@ -20,7 +21,7 @@
   }
   .grid-item2 {
     background-color: rgb(38, 102, 38);
-    grid-column: span 2;
+    grid-column: span 3;
     grid-row: span 2;
   }
   .grid-item3 {
@@ -52,5 +53,17 @@
   }
   .grid-item11 {
     background-color: rgb(53, 181, 213);
+  }
+  .grid-item12 {
+    background-color: rgba(42, 187, 119, 0.574);
+  }
+  .grid-item13 {
+    background-color: rgba(64, 71, 206, 0.574);
+  }
+  .grid-item14 {
+    background-color: rgba(173, 206, 64, 0.574);
+  }
+  .grid-item15 {
+    background-color: rgba(222, 155, 54, 0.574);
   }
 }
