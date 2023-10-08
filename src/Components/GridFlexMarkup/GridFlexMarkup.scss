@@ -1,0 +1,64 @@
+.body-container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: minmax(150px, 200px) 1fr minmax(150px, 200px);
+  grid-template-areas: "header header header" "nav main aside" "footer footer footer";
+
+  background-color: aquamarine;
+}
+
+@media (max-width: 510px) {
+  aside {
+    display: none;
+  }
+  .body-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header" "nav main" "footer footer";
+  }
+}
+
+@media (max-width: 320px) {
+  .body-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "main" "footer";
+  }
+}
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+aside {
+  grid-area: aside;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+.content {
+  background-color: rgb(59, 237, 118);
+}
+.element-1 {
+  background-color: rgb(185, 255, 127);
+}
+.element-2 {
+  background-color: rgb(127, 131, 255);
+}
+.element-3 {
+  background-color: rgb(127, 185, 255);
+}
+.element-4 {
+  background-color: rgb(238, 127, 255);
+}
+.element-5 {
+  background-color: rgb(255, 127, 204);
+}
+.element-6 {
+  background-color: rgb(255, 204, 127);
+}

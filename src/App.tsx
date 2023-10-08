@@ -4,6 +4,7 @@
 // import GridTemplate from "./Components/GridTemplate/GridTemplate";
 
 import GridEmbeddedness from "./Components/GridEmbeddedness/GridEmbeddedness";
+import GridFlexMarkup from "./Components/GridFlexMarkup/GridFlexMarkup";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <CSSChildPseudoclass /> */}
       {/* <GridTemplate /> */}
       {/* <GridLineUp /> */}
-      <GridEmbeddedness />
+      {/* <GridEmbeddedness /> */}
+      <GridFlexMarkup />
     </>
   );
 }
